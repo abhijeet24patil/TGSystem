@@ -1,0 +1,137 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img26.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav a{
+      color:#fff;
+    }
+
+.navbar-header a{
+  color:#fff;
+}
+
+.login-page{
+    width: 360px;
+    padding: 10% 40 40;
+    margin: auto;
+}
+.form{
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    margin: 0 auto 200px;
+    padding: 45px;
+    text-align: center;
+}
+.form input{
+    font-family: "roboto", sans-serif;
+    background: #f2f2f2;
+    outline: 1;
+    width: 100%;
+    border: none;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+.form button{
+    font-family: "roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: purple;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: red;
+    font-size: 24px;
+    border-radius: 20px;
+
+}
+
+.btn-login{
+
+  font-family: "roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: purple;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: red;
+    font-size: 24px;
+    border-radius: 20px;
+
+}
+.form button:hover, .form button:active{
+    background: orange;
+}
+
+.form .message{
+    margin: 15px 0 0;
+    color: palegoldenrod;
+    font-size: 26px; 
+}
+
+.form .message a{
+    color: yellow;
+    text-decoration: none;
+} 
+
+.form .register-form{
+    display: none;
+}
+
+/*body {font-family: Arial, Helvetica, sans-serif;}*/
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used 
+  background-image: url("img_nature.jpg");*/
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+/*.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}*/
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: green;
+}

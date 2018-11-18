@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(img6.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.user_db{
+    background: #fff;
+}
+
+.bg-primary a{
+      color:#fff;
+    }
+    .navbar-header a{
+      color:#fff;
+    }
+
+
+
+.intrests h1{
+    color: blue;
+    font-size: 50px;
+    font-family: bold;
+}
+
+.intrests li{
+    color: mediumvioletred;
+    font-size: 20px;
+}
+
+.intrests label{
+    color: tomato;
+    font-size: 20px;
+}
+.intrests input{
+    border-radius: 50px;
+    font-size: 20px;
+}
+.intrests .k{
+   background-color: blue;
+font-size: 20px;
+    border-radius: 30px; 
+}
+
+.intrests .k:hover{
+    background: red;
+}

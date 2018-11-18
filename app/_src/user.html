@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>TGS/Login</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../_libs/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style2.css">
+      <script src="../_libs/jquery/jquery.min.js"></script>
+      <script src="../_libs/bootstrap//js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <nav class="navbar bg-primary">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="../index.html">TravelGuideSystem</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="admin.html"></span> Admin</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4 col-lg-4">
+            </div>
+            <div class="col-md-4 col-lg-4">
+               <div class="login-page">
+                  <div class="form">
+                     <form class="register-form" action="#" onsubmit="return validation()">
+                        <div class="form-group">
+                           <input type="text" placeholder="username" id="uname" class="form-control" autocomplete="off" />
+                           <span id="name" class="text-danger"></span>
+                           <input type="text" placeholder="password" id="passw" class="form-control" autocomplete="off"/>
+                           <span id="pas" class="text-danger"></span>
+                           <input type="text" placeholder="conform-password" id="con-pass" class="form-control" autocomplete="off"/>
+                           <span id="conpass" class="text-danger"></span>
+                           <input type="text" placeholder="mobile-number" id="mob" class="form-control" autocomplete="off"/>
+                           <span id="mobile" class="text-danger"></span>
+                           <input type="text" placeholder="email-id" id="email" class="form-control" autocomplete="off"/>
+                           <span id="emailid" class="text-danger"></span>
+                        </div>
+                        <a href="user_dashboard.html" class="button btn-login">REGISTER</a>
+                        <p class="message">already registered? <a href="#">login</a></p>
+                     </form>
+                     <form class="login-form">
+                        <h1 style="color:  white">User Login</h1>
+                        <input type="text" placeholder="USERNAME" />
+                        <input type="password" placeholder="PASSWORD" />
+                        <a href="user_dashboard.html" class="btn  btn-login">LOGIN</a>
+                        <p class="message">not registered?<a href="#">register</a></p>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+            </div>
+         </div>
+      </div>
+      <script>
+    $('.message a').click(function(){
+                          $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+                          });
+    </script>
+    <script type="text/javascript">
+        function validation()
+        {
+            var user=document.getElementById("uname").value;
+            var pass=document.getElementById("passw").value;
+            var con=document.getElementById("con-pass").value;
+            var mobl=document.getElementById("mob").value;
+            var em=document.getElementById("email").value;
+            
+            if(user==""){
+                document.getElementById("name").innerHTML="please enter the username";
+                return false;
+            }
+            if((user.length<=2)||(user.length>20)){
+                document.getElementById("name").innerHTML="username length must be between 2 and 20 characters";
+                return false;
+            }
+            if(!isNaN(user)){
+                document.getElementById("name").innerHTML="only characters are allowed";
+                return false;
+            }
+            if(pass==""){
+                document.getElementById("pas").innerHTML="please enter the password";
+                return false;
+            }
+            if((pass.length<=5)||(pass.length>20)){
+                document.getElementById("pas").innerHTML="password length must be between 5 and 20";
+                return false;
+            }
+            
+            
+            if(con==""){
+                document.getElementById("conpass").innerHTML="please enter the conform password field";
+                return false;
+        }
+            if(pass!=con){
+                document.getElementById("conpass").innerHTML="password does not match";
+                return false;
+            }
+            if(mobl=="")
+            {    document.getElementById("mobile").innerHTML="please enter the mobile number";
+             return false;
+        }
+            if(isNaN(mobl)){
+                document.getElementById("mobile").innerHTML="only digits are allowed";
+                return false;
+            }
+            if(mobl.length!=10){
+                document.getElementById("mobile").innerHTML="user must enter 10 digits";
+                return false;
+            }
+            
+            if(em=="")
+            {       document.getElementById("emailid").innerHTML="please enter the emailId";
+            return false;
+         }
+            if(em.indexOf('@')<=0)
+            {       document.getElementById("emailid").innerHTML="position of '@' is invalid";
+            return false;
+         }
+            if((em.charAt(em.length-4)!=".")&&(em.charAt(em.length-3)!="."))
+            {       document.getElementById("emailid").innerHTML="position of the '.' is invalid";
+            return false;
+         }   
+        else
+        {
+            alert("successfully registered");
+        }
+    }
+    </script>   
+   </body>
+</html>
+

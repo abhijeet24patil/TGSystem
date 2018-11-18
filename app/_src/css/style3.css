@@ -1,0 +1,31 @@
+h1{
+    color: blue;
+    font-size: 50px;
+    font-family: bold;
+}
+
+label{
+    color: tomato;
+    font-size: 20px;
+}
+input{
+    border-radius: 50px;
+    font-size: 20px;
+}
+.k{
+   background-color: blue;
+font-size: 20px;
+    border-radius: 30px;
+}
+
+.k:hover{
+    background: red;
+}
+
+
+.nav a{
+      color:#fff;
+    }
+    .navbar-header a{
+      color:#fff;
+    }

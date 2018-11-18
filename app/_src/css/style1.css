@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(img4.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+
+.nav a{
+      color:#fff;
+    }
+    .navbar-header a{
+      color:#fff;
+    }
+/*.loginbox{
+    width: 320px;
+    height: 420px;
+    color: #fff;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}*/
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 10;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 44px;
+}
+
+/*.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}*/
+
+/*.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}*/
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: purple;
+    color: purple;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.login-page input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: red;
+}
+.login-page a{
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+    color: red;
+}
+
+.login-page a:hover
+{
+    color: yellow;
+}
+.login-page{
+    width: 360px;
+    padding: 10% 0 0;
+        margin: auto;
+}
+.form{
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    margin: 0 auto 200px;
+    padding: 45px;
+    text-align: center;
+}
+.form input{
+    font-family: "roboto", sans-serif;
+    background: #f2f2f2;
+    outline: 1;
+    width: 100%;
+    border: none;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+.btn-admin{
+    font-family: "roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: purple;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: aliceblue;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.form button:hover, .form button:active{
+    background: orange;
+}
